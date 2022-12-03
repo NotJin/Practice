@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
+<?import javafx.scene.text.Text?>
 <AnchorPane prefHeight="599.0" prefWidth="853.0" stylesheets="@book.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practice.book.BookstoreController">
    <children>
       <GridPane layoutX="63.0" layoutY="274.0" prefHeight="191.0" prefWidth="728.0" styleClass="GridPane" stylesheets="@../book/book.css">
