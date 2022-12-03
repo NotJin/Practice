@@ -1,12 +1,12 @@
 package javafx.book;
 
+import entities.Book;
 import enums.RepoType;
 import factory.Factory;
+import impls.BookRepository;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
-
-import java.awt.print.Book;
 
 public class BookstoreController {
 
@@ -19,10 +19,10 @@ public class BookstoreController {
     public void Save(ActionEvent actionEvent) {
         try {
             // them book
-            Book s=  new Book(txtBookID.getText()., txtBookName.getText(),txtAuthor.getText(),txtPrice.getText());
-            StudentRepository sr = (StudentRepository) Factory.createRepository(RepoType.STUDENT);
-            if(sr.create(s)){
-                backToList(null);
+            Book s=  new Book( txtBookID.getText(),txtBookName.getText(),txtAuthor.getText(),txtPrice.getText());
+            BookRepository sr = (BookRepository) Factory.createRepository(RepoType.BOOKS);
+            if(sr.save(s)){
+
                 return;
             }
             throw new Exception("Không thêm được dữ liệu");

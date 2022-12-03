@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Text?>
-<AnchorPane prefHeight="599.0" prefWidth="853.0" stylesheets="@book.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practice.book.BookstoreController">
+<AnchorPane prefHeight="599.0" prefWidth="853.0" stylesheets="@book.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.book.BookstoreController">
    <children>
       <GridPane layoutX="63.0" layoutY="274.0" prefHeight="191.0" prefWidth="728.0" styleClass="GridPane" stylesheets="@../book/book.css">
         <columnConstraints>
@@ -19,8 +19,8 @@
           <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
-      <Button layoutX="753.0" layoutY="218.0" mnemonicParsing="false" text="Save" />
-      <Button layoutX="697.0" layoutY="506.0" mnemonicParsing="false" text="Exit">
+      <Button onAction="#Save" layoutX="753.0" layoutY="218.0" mnemonicParsing="false" text="Save" />
+      <Button onAction="#Exit" layoutX="697.0" layoutY="506.0" mnemonicParsing="false" text="Exit">
          <padding>
             <Insets bottom="5.0" left="30.0" right="30.0" top="5.0" />
          </padding>
